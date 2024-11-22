@@ -1,0 +1,152 @@
+* {
+  font-family: poppins, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.section-center {
+  margin: 8rem auto;
+  width: 35rem;
+  padding: 1.5rem;
+  background-color: rgb(250, 237, 221);
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.grocery-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clear-btn:hover {
+  background: #ff8080;
+  color: #fff;
+}
+.alert {
+  width: 100%;
+  padding: 0.5rem 0rem;
+  border: none;
+  text-transform: capitalize;
+  border-radius: 10px;
+  text-align: center;
+  visibility: hidden;
+}
+
+.alert-danger {
+  visibility: visible;
+  background-color: #f6adad;
+}
+.alert-success {
+  visibility: visible;
+  background-color: #88f5bf;
+}
+.alert-good {
+  visibility: visible;
+  background-color: rgb(140, 241, 140);
+}
+.form-contrl {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#grocery {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  outline: none;
+}
+#grocery:focus {
+  border-color: none;
+}
+.submit-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: aquamarine;
+}
+.grtext {
+  font-size: 1.1rem;
+}
+/* grocery contaainer */
+.grocery-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.grocery-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+}
+.grocery-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  visibility: hidden;
+}
+.show-container {
+  visibility: hidden;
+}
+.delete-btn {
+  background: none;
+  font-size: 1.5rem;
+  color: red;
+  font-weight: 700;
+  border: none;
+}
+.edit-btn {
+  background: none;
+  font-size: 1.5rem;
+  color: green;
+  font-weight: 700;
+  border: none;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+.clear-btn {
+  width: 100%;
+  padding: 0.5rem 0rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 320px) {
+  .section-center {
+    width: 15rem;
+  }
+  .form-contrl {
+    height: 1.6rem;
+    font-size: 1rem;
+  }
+  .submit-btn {
+    padding: 0rem 0.8rem;
+  }
+  .grtext {
+    font-size: 1rem;
+  }
+  .delete-btn,
+  .edit-btn {
+    font-size: 1.1rem;
+  }
+  .clear-btn {
+    padding: 0.3rem 0rem;
+  }
+  .grocery-item {
+    height: 2.5rem;
+  }
+}
